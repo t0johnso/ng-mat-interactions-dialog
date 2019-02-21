@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgMatInteractionsDialogModule } from 'ng-mat-interactions-dialog';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgMatInteractionsDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
