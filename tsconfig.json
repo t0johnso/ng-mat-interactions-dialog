@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-mat-interactions-dialog": [
+        "dist/ng-mat-interactions-dialog"
+      ],
+      "ng-mat-interactions-dialog/*": [
+        "dist/ng-mat-interactions-dialog/*"
+      ]
+    }
   }
 }
