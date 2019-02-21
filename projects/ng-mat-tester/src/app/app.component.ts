@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { NgMatAlertService } from 'ng-mat-interactions-dialog';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,37 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-mat-tester';
+  title = 'Angular Material Interactions Dialog';
+  @ViewChild('alertTemplate') alertTemplateRef: ElementRef;
+  constructor(
+    private ngMatAlertService: NgMatAlertService,
+  ){}
+
+  basicAlert(){
+    return this.ngMatAlertService.alert();
+  }
+
+  basicConfirm(){
+    return this.ngMatAlertService.confirm();
+  }
+
+  basicPrompt(){
+    return this.ngMatAlertService.prompt();
+  }
+
+  alert(){
+    let options = { title: 'Alert', message: 'This is a test', template: this.alertTemplateRef, alertButton: 'Cool' }
+    return this.ngMatAlertService.alert(options);
+  }
+
+  confirm(){
+    let options = { title: 'Confirm', message: 'Really though?', cancelButton: 'oh oops JK.', confirmButton: 'Heck Yea!'}//, template: this.alertTemplateRef }
+    return this.ngMatAlertService.confirm(options);
+  }
+
+  prompt(){
+    let options = { title: 'Prompt', message: 'What would you like?', cancelButton: 'OH, nevermind.', promptButton: 'DONE'}//, template: this.alertTemplateRef }
+    return this.ngMatAlertService.prompt(options);
+  }
+
 }

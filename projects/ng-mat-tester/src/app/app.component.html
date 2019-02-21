@@ -1,1 +1,12 @@
-<nmid-ng-mat-interactions-dialog></nmid-ng-mat-interactions-dialog>
+<h1>Welcome to {{ title }}!</h1>
+<button type="button" name="alert" (click)="alert()" color="accent">Alert</button>
+<button type="button" name="prompt" (click)="prompt()" color="primary">Prompt</button>
+<button type="button" name="confirm" (click)="confirm()" color="warn">Confirm</button>
+
+<ng-template #alertTemplate>
+<ul>
+  <li>Step One</li>
+  <li>Step Two</li>
+  <li>Step Three</li>
+</ul>
+</ng-template>
