@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build_lib": "ng build ng-mat-interactions-dialog",
     "npm_pack": "cd dist/ng-mat-interactions-dialog && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack && ng serve"
   },
   "private": true,
   "dependencies": {

@@ -8,6 +8,7 @@ import { NgMatPromptComponent } from './ng-mat-prompt/ng-mat-prompt.component';
   declarations: [NgMatInteractionsDialogComponent, NgMatAlertComponent, NgMatConfirmComponent, NgMatPromptComponent],
   imports: [
   ],
-  exports: [NgMatInteractionsDialogComponent]
+  exports: [NgMatInteractionsDialogComponent],
+  entryComponents: [NgMatAlertComponent, NgMatConfirmComponent, NgMatPromptComponent]
 })
 export class NgMatInteractionsDialogModule { }
