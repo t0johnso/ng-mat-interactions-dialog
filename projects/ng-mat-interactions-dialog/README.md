@@ -14,7 +14,7 @@ So, inside your Angular application directory:
 <pre>cd /.../my-angular-project</pre>
 
 ### install library
-use preferred import:
+use your preferred import method:
 
 NPM:
 <pre>npm i --save ng-mat-interactions-dialog</pre>
@@ -25,7 +25,7 @@ YARN:
 ### install peer dependencies as needed:
 
 #### Angular Material
-Aside from core Angular modules for any new angular project ( @angular/core, @angular/common, @angular/forms ), this library has also peer dependencies for Angular Material (https://material.angular.io/guide/getting-started)
+Aside from core Angular modules for any new angular project ( @angular/core, @angular/common, @angular/forms ), this library has also peer dependencies for Angular Material (https://material.angular.io/guide/getting-started)<br>
 Follow get started steps 1-2, 4: install npm modules, import animations module, include a theme.
 
 ...from https://material.angular.io/guide/getting-started
@@ -33,6 +33,7 @@ Follow get started steps 1-2, 4: install npm modules, import animations module, 
 <pre>npm install --save @angular/material @angular/cdk @angular/animations</pre>
 2. import browser animations module ( in app module or)
 <pre>
+...
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -117,18 +118,20 @@ DialogData
 
 To use the template feature, pass a template reference from the relevant component: ElementRef;
 
-in component template:
+in component.html:
 <pre>
-  <ng-template #myAlertContentTemplate>
+...
+`  <ng-template #myAlertContentTemplate>
     <ul>
       <li>Step One</li>
       <li>Step Two</li>
       <li>Step Three</li>
     </ul>
-  </ng-template>
+  </ng-template>`
+...
 </pre>
 
-in same component:
+in component.ts:
 <pre>
 import {
   ...
@@ -159,7 +162,7 @@ myAlertMethod(){
 The Development repo is available @ https://github.com/t0johnso/ng-mat-interactions-dialog
 <pre>git clone https://github.com/t0johnso/ng-mat-interactions-dialog.git</pre>
 
-projects > ng-mat-interactions-dialog is the actual library
+projects > ng-mat-interactions-dialog is the actual library<br>
 projects > ng-mat-tester is a test environment you can use to test locally before repackaging;
 
 ### Serve
@@ -169,9 +172,15 @@ See a sample app running the build
 ### Test library
 <pre>ng test ng-mat-interactions-dialog</pre>
 
-### Test application:
+### Test consumer application:
 <pre>ng test ng-mat-tester</pre>
 
 ### Build and Serve:
 <pre>npm run package</pre>
 This will, build the library, packaged as dist/ng-mat-interactions-dialog/ng-mat-interactions-dialog-1.0.0.tgz, and serve the test application (on localhost:4200).
+
+## Test your package
+You'll want to serve up a new app and test importing it <br>
+Todd Palmer wrote a great article on this for Angular-In-Depth,<br>
+Bookmarked that section of the article here:
+https://blog.angularindepth.com/creating-a-library-in-angular-6-part-2-6e2bc1e14121#1cb3
