@@ -174,10 +174,10 @@ See a sample app running the build
 
 ### Build and Serve:
 <pre>npm run package</pre>
-This will, build the library, packaged as dist/ng-mat-interactions-dialog/ng-mat-interactions-dialog-1.0.0.tgz, and serve the test application (on localhost:4200).
+This will, build the library, packaged as dist/ng-mat-interactions-dialog/ng-mat-interactions-dialog-version#.tgz, and serve the test application (on localhost:4200).
 
 ## Test your package
-You'll want to serve up a new app and test importing it <br>
+You'll want to serve up a new app and test importing you new version of the package <br>
 Todd Palmer wrote a great article on this for Angular-In-Depth,<br>
-Bookmarked that section of the article here:
+Bookmarked that section of the article here:<br>
 https://blog.angularindepth.com/creating-a-library-in-angular-6-part-2-6e2bc1e14121#1cb3
