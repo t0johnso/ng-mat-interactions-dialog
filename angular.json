@@ -58,7 +58,7 @@
               "projects/ng-mat-tester/src/assets"
             ],
             "styles": [
-              "projects/ng-mat-tester/src/styles.css"
+              "projects/ng-mat-tester/src/styles.scss"
             ],
             "scripts": []
           },
@@ -114,7 +114,7 @@
             "tsConfig": "projects/ng-mat-tester/tsconfig.spec.json",
             "karmaConfig": "projects/ng-mat-tester/karma.conf.js",
             "styles": [
-              "projects/ng-mat-tester/src/styles.css"
+              "projects/ng-mat-tester/src/styles.scss"
             ],
             "scripts": [],
             "assets": [

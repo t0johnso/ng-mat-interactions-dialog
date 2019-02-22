@@ -1,0 +1,8 @@
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+  font-weight: bold;
+}
+.mat-raised-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+  &.mat-primary{
+    color: white;
+  }
+}
