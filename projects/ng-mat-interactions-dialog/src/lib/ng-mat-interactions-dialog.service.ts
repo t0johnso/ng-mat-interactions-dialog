@@ -8,7 +8,7 @@ import { NgMatConfirmComponent } from './ng-mat-confirm/ng-mat-confirm.component
 @Injectable({
   providedIn: 'root'
 })
-export class NgMatAlertService {
+export class NgMatInteractionsDialogService {
 
   constructor(
     // public dialog: MatDialog,

@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NgMatAlertService } from 'ng-mat-interactions-dialog';
+import { NgMatInteractionsDialogService } from 'ng-mat-interactions-dialog';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Angular Material Interactions Dialog';
   @ViewChild('alertTemplate') alertTemplateRef: ElementRef;
   constructor(
-    private ngMatAlertService: NgMatAlertService,
+    private ngMatAlertService: NgMatInteractionsDialogService,
   ){}
 
   basicAlert(){
