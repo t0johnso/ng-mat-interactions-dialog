@@ -119,18 +119,15 @@ DialogData
 To use the template feature, pass a template reference from the relevant component: ElementRef;
 
 in component.html:
-<pre>
-...
-`  <ng-template #myAlertContentTemplate>
+```
+  <ng-template #myAlertContentTemplate>
     <ul>
       <li>Step One</li>
       <li>Step Two</li>
       <li>Step Three</li>
     </ul>
-  </ng-template>`
-...
-</pre>
-
+  </ng-template>
+```
 in component.ts:
 <pre>
 import {
