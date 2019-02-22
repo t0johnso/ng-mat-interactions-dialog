@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MatDialog, MatDialogRef, DialogRole } from '@angular/material/dialog';
+import { MatDialog, DialogRole } from '@angular/material/dialog';
 import { DialogData } from './dialog-data';
 import { NgMatAlertComponent } from './ng-mat-alert/ng-mat-alert.component';
 import { NgMatPromptComponent } from './ng-mat-prompt/ng-mat-prompt.component';

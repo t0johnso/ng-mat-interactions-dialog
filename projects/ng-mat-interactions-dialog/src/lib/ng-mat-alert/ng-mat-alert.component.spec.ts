@@ -1,8 +1,6 @@
-import { Component, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogModule, MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DialogData } from '../dialog-data';
+import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { NgMatInteractionsDialogService } from '../ng-mat-interactions-dialog.service'
 import { NgMatAlertComponent } from './ng-mat-alert.component';
