@@ -1,3 +1,11 @@
-<p>
-  ng-mat-alert works!
-</p>
+<ng-container *ngIf="data">
+  <h1 mat-dialog-title *ngIf="data.title">{{data.title}}</h1>
+  <div mat-dialog-content>
+    <p *ngIf="data.message">{{data.message}}</p>
+  </div>
+  <ng-container *ngTemplateOutlet="data.template"></ng-container>
+</ng-container>
+
+<div mat-dialog-actions>
+  <button mat-raised-button type="button" name="ok" color="primary" mat-dialog-close >{{data && data.alertButton || 'OK'}}</button>
+</div>

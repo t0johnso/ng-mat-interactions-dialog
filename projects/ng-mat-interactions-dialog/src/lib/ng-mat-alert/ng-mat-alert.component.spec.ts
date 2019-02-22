@@ -1,5 +1,10 @@
+import { Component, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule, MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogData } from '../dialog-data';
 
+import { NgMatInteractionsDialogService } from '../ng-mat-interactions-dialog.service'
 import { NgMatAlertComponent } from './ng-mat-alert.component';
 
 describe('NgMatAlertComponent', () => {
@@ -8,7 +13,9 @@ describe('NgMatAlertComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgMatAlertComponent ]
+      imports:[FormsModule, MatDialogModule],
+      providers: [NgMatInteractionsDialogService, {provide: MatDialogRef, useValue: {}}, {provide: MAT_DIALOG_DATA, useValue: {} } ],
+      declarations: [NgMatAlertComponent]
     })
     .compileComponents();
   }));
