@@ -137,7 +137,7 @@ import {
 } from '@angular/core';
 import { DialogData, NgMatInteractionsDialogService } from 'ng-mat-interactions-dialog';
 ...
-@ViewChild('myAlertTemplate') alertTemplateRef: ElementRef;
+@ViewChild('myAlertContentTemplate') alertTemplateRef: ElementRef;
 constructor(
   ...
   private ngMatAlertService: NgMatInteractionsDialogService
