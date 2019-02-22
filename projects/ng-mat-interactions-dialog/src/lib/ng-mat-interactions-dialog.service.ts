@@ -15,7 +15,6 @@ export class NgMatInteractionsDialogService {
   ) { }
 
   openDialog(
-    // ariaType:string, component, data:DialogData) {
     ariaType:DialogRole, component, data?:DialogData ) {
     if(this.dialog.openDialogs.length) this.dialog.closeAll();
     const dialogRef = this.dialog.open(component, {
@@ -25,7 +24,6 @@ export class NgMatInteractionsDialogService {
     });
     console.log({ariaType, component, data});
     return dialogRef.afterClosed();
-   // return Promise.resolve({ariaType, component, data});
   }
 
   alert(data?:DialogData){

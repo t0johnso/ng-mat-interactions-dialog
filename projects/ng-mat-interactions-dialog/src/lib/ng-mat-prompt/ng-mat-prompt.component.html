@@ -3,8 +3,9 @@
   <p *ngIf="data">{{data.message}}</p>
 </div>
 <ng-container *ngTemplateOutlet="data.template"></ng-container>
-
-<input name="prompt-input" type="text" [(ngModel)]="result">
+<mat-form-field>
+  <input matInput name="prompt-input" type="text" [(ngModel)]="result" >
+</mat-form-field>
 <div mat-dialog-actions>
   <button mat-button type="button" name="cancel" color="primary" [mat-dialog-close]="''" >{{data && data.cancelButton || 'Cancel'}}</button>
   <button mat-raised-button type="button" name="ok" color="primary" [mat-dialog-close]="result" >{{data && data.promptButton || 'OK'}}</button>

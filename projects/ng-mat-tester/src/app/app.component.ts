@@ -13,31 +13,25 @@ export class AppComponent {
     private ngMatAlertService: NgMatInteractionsDialogService,
   ){}
 
-  basicAlert(){
-    return this.ngMatAlertService.alert();
-  }
-
-  basicConfirm(){
-    return this.ngMatAlertService.confirm();
-  }
-
-  basicPrompt(){
-    return this.ngMatAlertService.prompt();
-  }
-
   alert(){
     let options = { title: 'Alert', message: 'This is a test', template: this.alertTemplateRef, alertButton: 'Cool' }
-    return this.ngMatAlertService.alert(options);
+    this.ngMatAlertService.alert(options).subscribe(
+      result => console.log('Alert Dialog Closed: ',{result})
+    );
   }
 
   confirm(){
     let options = { title: 'Confirm', message: 'Really though?', cancelButton: 'oh oops JK.', confirmButton: 'Heck Yea!'}//, template: this.alertTemplateRef }
-    return this.ngMatAlertService.confirm(options);
+    this.ngMatAlertService.confirm(options).subscribe(
+      result => console.log('Confirm Dialog Closed: ',{result})
+    );
   }
 
   prompt(){
     let options = { title: 'Prompt', message: 'What would you like?', cancelButton: 'OH, nevermind.', promptButton: 'DONE'}//, template: this.alertTemplateRef }
-    return this.ngMatAlertService.prompt(options);
+    this.ngMatAlertService.prompt(options).subscribe(
+      result => console.log('Prompt Dialog Closed: ',{result})
+    );
   }
 
 }
