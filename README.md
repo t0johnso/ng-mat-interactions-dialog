@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
+## Get Started:
+
+import node module and Getting started README available on [NPM](https://www.npmjs.com/package/ng-mat-interactions-dialog) version 2.0.0
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
